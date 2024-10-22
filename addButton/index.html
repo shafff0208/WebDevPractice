@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Buttons
+        </title>
+    </head>
+    <body>
+        <a href="pageTest.html"
+        target="_blank"
+        title="Test Page">
+            <button style="font-size: 25px; 
+            background-color: rgb(122, 143, 183);
+            border-radius: 10px;" >
+                To Next Page
+            </button>
+        </a>
+
+        <button onclick="doSomething()" style="font-size: 25px; 
+        background-color: rgb(122, 143, 183);
+        border-radius: 10px;" >
+            Script
+        </button>
+
+        <h1 id="greet">Hello World</h1>
+
+        <script>
+            function doSomething(){
+                document.getElementById("greet").innerHTML = "Goodbye World"
+            }
+        </script>
+    </body>
+</html>

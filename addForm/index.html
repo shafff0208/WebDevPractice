@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <form action="index.php" method="post">
+        <!--Username-->
+        <label for="username">username: </label>
+        <input type="text" id="username" placeholder="johndoe123" minlength="5" maxlength="10">
+        <br>
+        <!--Email-->
+        <label for="email">email:</label>
+        <input type="email" id="email" placeholder="john@doe.com">
+        <br>
+         <!--Password-->
+         <label for="password">password: </label>
+         <input type="password" id="password" placeholder="Gh728&sh7" minlength="10">
+        <br>
+        <!--Phone Number-->
+        <label for="phoneNumber">phone number:</label>
+        <input type="tel" id="phoneNumber" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <br>
+        <!--Birthdate-->
+        <label for="birthDate">birth date:</label>
+        <input type="date" id="birthDate">
+        <br>
+        <!--Quantity-->
+        <label for="quantity">quantity</label>
+        <input type="number" id="quantity" min="0" max="10" value="0">
+        <br>
+        <!--Radio-->
+        <label for="title">title:</label>
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." name="title">
+
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Ms." name="title">
+
+        <label for="Dr.">Dr.</label>
+        <input type="radio" id="Dr." name="title">
+        <br>
+
+        <!--Submit & Reset Button-->
+        <input type="submit">
+        <input type="reset">
+ 
+
+    </form>
+    
+</body>
+</html>
