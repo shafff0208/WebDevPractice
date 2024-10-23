@@ -1,0 +1,17 @@
+
+body{
+    background-color: rgb(25, 25, 25);
+}
+#p1{
+    color: lime;
+}
+#p2{
+    color: hsl(0, 100%, 50%);
+}
+#p3{
+    color: rgb(0, 157, 255);
+}
+#p4{
+    color: #ff00a6;
+}
+
