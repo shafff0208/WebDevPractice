@@ -10,7 +10,7 @@
 <body>
     <h2>Material Order Form</h2>
     <form id="orderForm">
-        <h3>Customer Details</h3>
+        <h3>Staff Details</h3>
         <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -26,40 +26,96 @@
             <input type="tel" id="phone" name="phone" required>
         </div>
 
-        <h3>Order Items</h3>
+        <h3>Required Material</h3>
         <div id="orderItemsContainer">
             <div class="order-item">
                 <div class="form-group">
-                    <label>Material No.:</label>
-                    <input type="text" name="materialNo[]" required>
+                    <label for="materialNo">Material No.:</label>
+                    <input type="text" id="materialNo" name="materialNo[]" required>
                 </div>
                 <div class="form-group">
-                    <label>Material Description:</label>
-                    <input type="text" name="materialDescription[]" required>
+                    <label for="materialDescription">Material Description:</label>
+                    <input type="text" id="materialDescription" name="materialDescription[]" required>
                 </div>
                 <div class="form-group">
-                    <label>Quantity:</label>
-                    <input type="number" name="quantity[]" required>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity[]" required>
                 </div>
                 <div class="form-group">
-                    <label>Project Number:</label>
-                    <input type="text" name="projectNumber[]" required>
+                    <label for="projectNumber">Project Number:</label>
+                    <input type="text" id="projectNumber" name="projectNumber[]" required>
                 </div>
                 <div class="form-group">
-                    <label>LO Store:</label>
-                    <input type="text" name="loStore[]" required>
+                    <label for="loStore">LO Store:</label>
+                    <input type="text" id="loStore" name="loStore[]" required>
                 </div>
                 <div class="form-group">
-                    <label>Plant:</label>
-                    <input type="text" name="plant[]" required>
+                    <label for="plantTest">Plant:</label>
+                    <select id="plantTest" name="plantTest[]">
+                        <option value="V032">V032</option>
+                        <option value="V051">V051</option>
+                        <option value="V240">V240</option>
+                        <option value="V370">V370</option>
+                        <option value="V376">V376</option>
+                        <option value="V384">V384</option>
+                        <option value="V388">V388</option>
+                        <option value="V404">V404</option>
+                        <option value="V495">V495</option>
+                        <option value="V496">V496</option>
+                        <option value="V497">V497</option>
+                        <option value="V526">V526</option>
+                        <option value="V586">V586</option>
+                        <option value="V648">V648</option>
+                        <option value="V677">V677</option>
+
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label>SLOC:</label>
-                    <input type="text" name="sloc[]" required>
+                    <label for="slocTest">SLOC:</label>
+                    <select id="slocTest" name="slocTest[]">
+                        <option value="1A73">1A73</option>
+                        <option value="KF03">KF03</option>
+                        <option value="MY12">MY12</option>
+                        <option value="NI11">NI11</option>
+                        <option value="NI12">NI12</option>
+                        <option value="NI13">NI13</option>
+                        <option value="NI14">NI14</option>
+                        <option value="TE11">TE11</option>
+                        <option value="EP04">EP04</option>
+                        <option value="EB01">EB01</option>
+                        <option value="TG01">TG01</option>
+                        <option value="EB02">EB02</option>
+                        <option value="MJ01">MJ01</option>
+                        <option value="SA11">SA11</option>
+                        <option value="FC01">FC01</option>
+                        <option value="KF01">KF01</option>
+                        <option value="KS01">KS01</option>
+                        <option value="MY11">MY11</option>
+                        <option value="TP51">TP51</option>
+                        <option value="2U72">2U72</option>
+                        <option value="TE12">TE12</option>
+                        <option value="2B72">2B72</option>
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label>Contractor:</label>
-                    <input type="text" name="contractor[]" required>
+                    <label for="contractorTest">Contractor:</label>
+                    <select id="contractorTest" name="contractorTest[]">
+                        <option value="EP SINAR (M) SDN BHD">EP SINAR (M) SDN BHD</option>
+                        <option value="EVOLUSI BERSATU SDN BHD">EVOLUSI BERSATU SDN BHD</option>
+                        <option value="EXACT ENGINEERING SDN BHD">EXACT ENGINEERING SDN BHD</option>
+                        <option value="FEMAC ENGINEERING SDN BHD">FEMAC ENGINEERING SDN BHD</option>
+                        <option value="KHAUF ENGINEERING SDN BHD">KHAUF ENGINEERING SDN BHD</option>
+                        <option value="KOMISO SDN BHD">KOMISO SDN BHD</option>
+                        <option value="KONSORTIUM MYRCOM">KONSORTIUM MYRCOM</option>
+                        <option value="MAJU R&A SDN BHD">MAJU R&A SDN BHD</option>
+                        <option value="NINAZ TELCO">NINAZ TELCO</option>
+                        <option value="SERI PANCAR">SERI PANCAR</option>
+                        <option value="TAISAH TEGUH ENGINEERING SDN B">TAISAH TEGUH ENGINEERING SDN B</option>
+                        <option value="TETAP PADU HOLDINGS SDN BHD">TETAP PADU HOLDINGS SDN BHD</option>
+                        <option value="TETAP YAKIN">TETAP YAKIN</option>
+                        <option value="USAHA KHIDMAT SDN BHD">USAHA KHIDMAT SDN BHD</option>
+                        <option value="YAZA COMMUNICATION SDN BHD">YAZA COMMUNICATION SDN BHD</option>
+                    </select>
                 </div>
             </div>
         </div>
