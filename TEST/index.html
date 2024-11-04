@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Order Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Material Order Form</h2>
+    <form id="orderForm">
+        <h3>Customer Details</h3>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <h3>Order Items</h3>
+        <div id="orderItemsContainer">
+            <div class="order-item">
+                <div class="form-group">
+                    <label>Material No.:</label>
+                    <input type="text" name="materialNo[]" required>
+                </div>
+                <div class="form-group">
+                    <label>Material Description:</label>
+                    <input type="text" name="materialDescription[]" required>
+                </div>
+                <div class="form-group">
+                    <label>Quantity:</label>
+                    <input type="number" name="quantity[]" required>
+                </div>
+                <div class="form-group">
+                    <label>Project Number:</label>
+                    <input type="text" name="projectNumber[]" required>
+                </div>
+                <div class="form-group">
+                    <label>LO Store:</label>
+                    <input type="text" name="loStore[]" required>
+                </div>
+                <div class="form-group">
+                    <label>Plant:</label>
+                    <input type="text" name="plant[]" required>
+                </div>
+                <div class="form-group">
+                    <label>SLOC:</label>
+                    <input type="text" name="sloc[]" required>
+                </div>
+                <div class="form-group">
+                    <label>Contractor:</label>
+                    <input type="text" name="contractor[]" required>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" onclick="addOrderItem()">Add Another Item</button>
+        <button type="button" onclick="clearForm()">Clear Form</button><br><br>
+        <button type="button" onclick="exportToExcel()">Export to Excel</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
