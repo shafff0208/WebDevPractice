@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1>
+        <div id="mainNum">
+            0
+        </div>
+    </h1>
+
+    <div>
+        <button id="clickButton" type="button" onclick="incrementNum()">Click</button>
+        <button id="upgradeClickButton" type="button" onclick="upgradeIncrement()">Upgrade</button>
+        <div id="CostText1">Cost: </div>
+        <div id="upgradeClickCostText">10</div>
+
+    </div>
+    <div class="upgradeGroup">
+        <button type="button" id="upgradeButton" onclick="upgradeAuto()">Upgrade Auto</button>
+        <div id="CostText2">Cost: </div>
+        <div id="upgradeCostText">10</div>
+    </div>
+    <div class="stateGroup">
+        <button type="button" id="pauseButton" onclick="checkState()">Pause</button>
+        <div id="CostText3">Cost: </div>
+        <div id="pauseCostText">1000</div>
+    </div>
+   
+    
+</body>
+</html>
